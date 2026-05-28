@@ -1,7 +1,7 @@
 {
   "name": "buggyboard",
   "version": "1.0.0",
-  "description": "BuggyBoard is a small web app for demo purposes. It is a full-stack Node app written in TypeScript with a React frontend, an Express backend, and a SQLite database.",
+  "description": "BuggyBoard is a small web app for educational purposes. It is a full-stack Node app written in TypeScript with a React frontend, an Express backend, and a SQLite database.",
   "private": true,
   "license": "MIT",
   "author": "Pandy Knight",
