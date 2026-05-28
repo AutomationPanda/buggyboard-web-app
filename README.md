@@ -1,13 +1,13 @@
 # BuggyBoard: A Simple Bug Tracker
 
-![BuggyBoard logo](frontend/public/logo_full.png)
-
 _BuggyBoard_ is a small web app for tracking bugs.
 
 > [!IMPORTANT]
 > BuggyBoard is meant for **demo purposes only**.
 > It is _not_ a production-ready app.
 > It is meant for learning and tinkering.
+
+![BuggyBoard logo](frontend/public/logo_readme.png)
 
 ## Features
 
