@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Design theme: specs/design/theme.md */
+:root {
+  --color-primary: #b8ae76; /* Volkswagen Savannah Beige */
+  /* Severity (specs/features/08-board-severity.md) – bolder, more differentiated */
+  --color-severity-high: #b84a2e; /* Strong terracotta / red-brown */
+  --color-severity-mid: #a67c47;   /* Amber / tan */
+  --color-severity-low: #4a6b5e;  /* Muted sage / cool green-gray */
+}
+
+/* Severity badges: text color + tint background (stronger tint for visibility) */
+.severity-badge {
+  display: inline-block;
+  padding: 0.125rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.severity-badge-high {
+  color: var(--color-severity-high);
+  background-color: color-mix(in srgb, var(--color-severity-high) 22%, transparent);
+}
+.severity-badge-mid {
+  color: var(--color-severity-mid);
+  background-color: color-mix(in srgb, var(--color-severity-mid) 22%, transparent);
+}
+.severity-badge-low {
+  color: var(--color-severity-low);
+  background-color: color-mix(in srgb, var(--color-severity-low) 22%, transparent);
+}
+
+/* Severity dropdown in modals: selected value uses same colors as board badges */
+.severity-select-high {
+  color: var(--color-severity-high);
+  background-color: color-mix(in srgb, var(--color-severity-high) 22%, transparent);
+}
+.severity-select-mid {
+  color: var(--color-severity-mid);
+  background-color: color-mix(in srgb, var(--color-severity-mid) 22%, transparent);
+}
+.severity-select-low {
+  color: var(--color-severity-low);
+  background-color: color-mix(in srgb, var(--color-severity-low) 22%, transparent);
+}

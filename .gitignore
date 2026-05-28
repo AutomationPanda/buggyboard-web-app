@@ -1,3 +1,6 @@
+# macOS
+.DS_Store
+
 # Logs
 logs
 *.log
@@ -141,3 +144,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# SQLite database (single file, no env-specific DBs)
+backend/data

@@ -1,0 +1,34 @@
+{
+  "name": "buggyboard",
+  "version": "1.0.0",
+  "description": "BuggyBoard is a small web app for demo purposes. It is a full-stack Node app written in TypeScript with a React frontend, an Express backend, and a SQLite database.",
+  "private": true,
+  "license": "MIT",
+  "author": "Pandy Knight",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AutomationPanda/buggyboard-web-app.git"
+  },
+  "type": "module",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev -w frontend\" \"npm run dev -w backend\"",
+    "build": "npm run build -w frontend && npm run build -w backend",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.14.0",
+    "@types/node": "^25.6.0",
+    "concurrently": "^9.1.0",
+    "eslint": "^9.14.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "globals": "^15.11.0",
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.14.0"
+  }
+}
