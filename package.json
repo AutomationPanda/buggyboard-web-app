@@ -17,6 +17,8 @@
   "scripts": {
     "dev": "concurrently \"npm run dev -w frontend\" \"npm run dev -w backend\"",
     "build": "npm run build -w frontend && npm run build -w backend",
+    "start:backend": "npm run start -w backend",
+    "start:frontend": "npm run preview -w frontend",
     "lint": "eslint .",
     "format": "prettier --write ."
   },
