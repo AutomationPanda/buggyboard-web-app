@@ -14,6 +14,7 @@ _BuggyBoard_ is a small web app for tracking bugs. It is developed and maintaine
 Fork the repository in GitHub.
 Then, clone it to your local machine or run it with [GitHub Codespaces](https://docs.github.com/en/codespaces/quickstart).
 
+Make sure you have [Node.js](https://nodejs.org/) installed.
 Run the following commands to run the app:
 
 ```sh
