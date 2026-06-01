@@ -30,7 +30,7 @@ npm run dev
 
 ## Tech stack
 
-- a fullstack [Node.j](https://nodejs.org/) app
+- a fullstack [Node.js](https://nodejs.org/) app
 - written in [TypeScript](https://www.typescriptlang.org/)
 - with a [React](https://react.dev/) frontend
 - using [Tailwind](https://tailwindcss.com/) for styling
