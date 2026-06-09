@@ -1,0 +1,13 @@
+- generic [ref=e163]:
+  - generic [ref=e164]:
+    - heading "BuggyBoard" [level=1] [ref=e166]
+    - paragraph [ref=e167]: Log in
+  - generic [ref=e168]:
+    - generic [ref=e169]:
+      - generic [ref=e170]: Username
+      - textbox "Username" [ref=e171]: wrong
+    - generic [ref=e172]:
+      - generic [ref=e173]: Password
+      - textbox "Password" [ref=e174]
+    - alert [ref=e176]: Password cannot be blank.
+    - button "Login" [ref=e175] [cursor=pointer]

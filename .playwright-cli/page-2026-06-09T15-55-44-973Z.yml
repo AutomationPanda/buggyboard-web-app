@@ -1,0 +1,30 @@
+- generic [ref=e17]:
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - img "BuggyBoard" [ref=e21]
+      - heading "BuggyBoard" [level=1] [ref=e22]
+    - generic [ref=e23]:
+      - search "Search bugs by title" [ref=e25]
+      - button "New Bug" [ref=e27] [cursor=pointer]
+      - button "Logout" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - group "Filter by bug state" [ref=e33]:
+        - button "Open" [ref=e34] [cursor=pointer]
+        - button "Closed" [active] [ref=e35] [cursor=pointer]
+      - table "Bugs" [ref=e38]:
+        - rowgroup [ref=e39]:
+          - row "ID Severity Title Owner" [ref=e40]:
+            - columnheader "ID" [ref=e41]:
+              - button "ID" [ref=e42] [cursor=pointer]: ID
+            - columnheader "Severity" [ref=e44]:
+              - button "Severity" [ref=e45] [cursor=pointer]: Severity
+            - columnheader "Title" [ref=e47]:
+              - button "Title" [ref=e48] [cursor=pointer]:
+                - text: Title
+                - generic [ref=e49]: ↑
+            - columnheader "Owner" [ref=e50]:
+              - button "Owner" [ref=e51] [cursor=pointer]: Owner
+        - rowgroup [ref=e53]:
+          - row "No bugs matched." [ref=e160]:
+            - cell "No bugs matched." [ref=e161]

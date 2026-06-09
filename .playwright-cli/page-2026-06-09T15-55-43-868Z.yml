@@ -1,0 +1,52 @@
+- generic [ref=e17]:
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - img "BuggyBoard" [ref=e21]
+      - heading "BuggyBoard" [level=1] [ref=e22]
+    - generic [ref=e23]:
+      - search "Search bugs by title" [ref=e25]
+      - button "New Bug" [ref=e27] [cursor=pointer]
+      - button "Logout" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - group "Filter by bug state" [ref=e33]:
+        - button "Open" [ref=e34] [cursor=pointer]
+        - button "Closed" [ref=e35] [cursor=pointer]
+      - table "Bugs" [ref=e38]:
+        - rowgroup [ref=e39]:
+          - row "ID Severity Title Owner" [ref=e40]:
+            - columnheader "ID" [ref=e41]:
+              - button "ID" [ref=e42] [cursor=pointer]: ID
+            - columnheader "Severity" [ref=e44]:
+              - button "Severity" [ref=e45] [cursor=pointer]: Severity
+            - columnheader "Title" [ref=e47]:
+              - button "Title" [ref=e48] [cursor=pointer]:
+                - text: Title
+                - generic [ref=e49]: ↑
+            - columnheader "Owner" [ref=e50]:
+              - button "Owner" [ref=e51] [cursor=pointer]: Owner
+        - rowgroup [ref=e53]:
+          - button "1 HIGH Engine is on fire buggy" [ref=e54] [cursor=pointer]:
+            - cell "1" [ref=e55]
+            - cell "HIGH" [ref=e56]:
+              - generic [ref=e57]: HIGH
+            - cell "Engine is on fire" [ref=e58]
+            - cell "buggy" [ref=e59]
+          - button "4 LOW Gas tank is leaking buggy" [ref=e142] [cursor=pointer]:
+            - cell "4" [ref=e143]
+            - cell "LOW" [ref=e144]:
+              - generic [ref=e145]: LOW
+            - cell "Gas tank is leaking" [ref=e146]
+            - cell "buggy" [ref=e147]
+          - button "3 HIGH My bug won't start buggy" [ref=e148] [cursor=pointer]:
+            - cell "3" [ref=e149]
+            - cell "HIGH" [ref=e150]:
+              - generic [ref=e151]: HIGH
+            - cell "My bug won't start" [ref=e152]
+            - cell "buggy" [ref=e153]
+          - button "2 MID We be steppin' buggy" [ref=e154] [cursor=pointer]:
+            - cell "2" [ref=e155]
+            - cell "MID" [ref=e156]:
+              - generic [ref=e157]: MID
+            - cell "We be steppin'" [ref=e158]
+            - cell "buggy" [ref=e159]
