@@ -1,0 +1,174 @@
+- generic [ref=e17]:
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - img "BuggyBoard" [ref=e21]
+      - heading "BuggyBoard" [level=1] [ref=e22]
+    - generic [ref=e23]:
+      - search "Search bugs by title" [ref=e25]
+      - button "New Bug" [ref=e27] [cursor=pointer]
+      - button "Logout" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - group "Filter by bug state" [ref=e33]:
+        - button "Open" [ref=e34] [cursor=pointer]
+        - button "Closed" [ref=e35] [cursor=pointer]
+      - table "Bugs" [ref=e38]:
+        - rowgroup [ref=e39]:
+          - row "ID Severity Title Owner" [ref=e40]:
+            - columnheader "ID" [ref=e41]:
+              - button "ID" [ref=e42] [cursor=pointer]: ID
+            - columnheader "Severity" [ref=e44]:
+              - button "Severity" [ref=e45] [cursor=pointer]:
+                - text: Severity
+                - generic [ref=e46]: ↓
+            - columnheader "Title" [ref=e47]:
+              - button "Title" [ref=e48] [cursor=pointer]: Title
+            - columnheader "Owner" [ref=e50]:
+              - button "Owner" [ref=e51] [cursor=pointer]: Owner
+        - rowgroup [ref=e53]:
+          - button "1 HIGH Engine is on fire buggy" [ref=e54] [cursor=pointer]:
+            - cell "1" [ref=e55]
+            - cell "HIGH" [ref=e56]:
+              - generic [ref=e57]: HIGH
+            - cell "Engine is on fire" [ref=e58]
+            - cell "buggy" [ref=e59]
+          - button "3 HIGH My bug won't start buggy" [ref=e60] [cursor=pointer]:
+            - cell "3" [ref=e61]
+            - cell "HIGH" [ref=e62]:
+              - generic [ref=e63]: HIGH
+            - cell "My bug won't start" [ref=e64]
+            - cell "buggy" [ref=e65]
+          - button "6 HIGH Login fails with special characters 1781020821152-t3avy buggy" [ref=e66] [cursor=pointer]:
+            - cell "6" [ref=e67]
+            - cell "HIGH" [ref=e68]:
+              - generic [ref=e69]: HIGH
+            - cell "Login fails with special characters 1781020821152-t3avy" [ref=e70]
+            - cell "buggy" [ref=e71]
+          - button "8 HIGH Login fails with special characters 1781020826033-qcwic buggy" [ref=e72] [cursor=pointer]:
+            - cell "8" [ref=e73]
+            - cell "HIGH" [ref=e74]:
+              - generic [ref=e75]: HIGH
+            - cell "Login fails with special characters 1781020826033-qcwic" [ref=e76]
+            - cell "buggy" [ref=e77]
+          - button "10 HIGH Login fails with special characters 1781020831687-q273e buggy" [ref=e78] [cursor=pointer]:
+            - cell "10" [ref=e79]
+            - cell "HIGH" [ref=e80]:
+              - generic [ref=e81]: HIGH
+            - cell "Login fails with special characters 1781020831687-q273e" [ref=e82]
+            - cell "buggy" [ref=e83]
+          - button "11 HIGH Login fails with special characters 1781020837179-6jf6q buggy" [ref=e84] [cursor=pointer]:
+            - cell "11" [ref=e85]
+            - cell "HIGH" [ref=e86]:
+              - generic [ref=e87]: HIGH
+            - cell "Login fails with special characters 1781020837179-6jf6q" [ref=e88]
+            - cell "buggy" [ref=e89]
+          - button "14 HIGH Login fails with special characters 1781020847280-48zm1 buggy" [ref=e90] [cursor=pointer]:
+            - cell "14" [ref=e91]
+            - cell "HIGH" [ref=e92]:
+              - generic [ref=e93]: HIGH
+            - cell "Login fails with special characters 1781020847280-48zm1" [ref=e94]
+            - cell "buggy" [ref=e95]
+          - button "16 HIGH Login fails with special characters 1781020852134-5tx8x buggy" [ref=e96] [cursor=pointer]:
+            - cell "16" [ref=e97]
+            - cell "HIGH" [ref=e98]:
+              - generic [ref=e99]: HIGH
+            - cell "Login fails with special characters 1781020852134-5tx8x" [ref=e100]
+            - cell "buggy" [ref=e101]
+          - button "18 HIGH Login fails with special characters 1781020855675-ctff4 buggy" [ref=e102] [cursor=pointer]:
+            - cell "18" [ref=e103]
+            - cell "HIGH" [ref=e104]:
+              - generic [ref=e105]: HIGH
+            - cell "Login fails with special characters 1781020855675-ctff4" [ref=e106]
+            - cell "buggy" [ref=e107]
+          - button "2 MID We be steppin' buggy" [ref=e108] [cursor=pointer]:
+            - cell "2" [ref=e109]
+            - cell "MID" [ref=e110]:
+              - generic [ref=e111]: MID
+            - cell "We be steppin'" [ref=e112]
+            - cell "buggy" [ref=e113]
+          - button "20 MID The hood is dented buggy" [ref=e114] [cursor=pointer]:
+            - cell "20" [ref=e115]
+            - cell "MID" [ref=e116]:
+              - generic [ref=e117]: MID
+            - cell "The hood is dented" [ref=e118]
+            - cell "buggy" [ref=e119]
+          - button "4 LOW Gas tank is leaking buggy" [ref=e120] [cursor=pointer]:
+            - cell "4" [ref=e121]
+            - cell "LOW" [ref=e122]:
+              - generic [ref=e123]: LOW
+            - cell "Gas tank is leaking" [ref=e124]
+            - cell "buggy" [ref=e125]
+          - button "5 LOW Open filter bug 1781020821108-n53o4 buggy" [ref=e126] [cursor=pointer]:
+            - cell "5" [ref=e127]
+            - cell "LOW" [ref=e128]:
+              - generic [ref=e129]: LOW
+            - cell "Open filter bug 1781020821108-n53o4" [ref=e130]
+            - cell "buggy" [ref=e131]
+          - button "7 LOW Open filter bug 1781020825983-4hk2n buggy" [ref=e132] [cursor=pointer]:
+            - cell "7" [ref=e133]
+            - cell "LOW" [ref=e134]:
+              - generic [ref=e135]: LOW
+            - cell "Open filter bug 1781020825983-4hk2n" [ref=e136]
+            - cell "buggy" [ref=e137]
+          - button "9 LOW Open filter bug 1781020830948-ojwv3 buggy" [ref=e138] [cursor=pointer]:
+            - cell "9" [ref=e139]
+            - cell "LOW" [ref=e140]:
+              - generic [ref=e141]: LOW
+            - cell "Open filter bug 1781020830948-ojwv3" [ref=e142]
+            - cell "buggy" [ref=e143]
+          - button "12 LOW Open filter bug 1781020837180-8fatf buggy" [ref=e144] [cursor=pointer]:
+            - cell "12" [ref=e145]
+            - cell "LOW" [ref=e146]:
+              - generic [ref=e147]: LOW
+            - cell "Open filter bug 1781020837180-8fatf" [ref=e148]
+            - cell "buggy" [ref=e149]
+          - button "13 LOW Open filter bug 1781020847231-wy0u2 buggy" [ref=e150] [cursor=pointer]:
+            - cell "13" [ref=e151]
+            - cell "LOW" [ref=e152]:
+              - generic [ref=e153]: LOW
+            - cell "Open filter bug 1781020847231-wy0u2" [ref=e154]
+            - cell "buggy" [ref=e155]
+          - button "15 LOW Open filter bug 1781020851740-kqhca buggy" [ref=e156] [cursor=pointer]:
+            - cell "15" [ref=e157]
+            - cell "LOW" [ref=e158]:
+              - generic [ref=e159]: LOW
+            - cell "Open filter bug 1781020851740-kqhca" [ref=e160]
+            - cell "buggy" [ref=e161]
+          - button "17 LOW Open filter bug 1781020855169-p18bl buggy" [ref=e162] [cursor=pointer]:
+            - cell "17" [ref=e163]
+            - cell "LOW" [ref=e164]:
+              - generic [ref=e165]: LOW
+            - cell "Open filter bug 1781020855169-p18bl" [ref=e166]
+            - cell "buggy" [ref=e167]
+          - button "19 LOW Oil is leaking buggy" [ref=e168] [cursor=pointer]:
+            - cell "19" [ref=e169]
+            - cell "LOW" [ref=e170]:
+              - generic [ref=e171]: LOW
+            - cell "Oil is leaking" [ref=e172]
+            - cell "buggy" [ref=e173]
+  - dialog "Create bug" [ref=e174]:
+    - generic [ref=e175]:
+      - generic [ref=e176]:
+        - heading "Create bug" [level=2] [ref=e177]
+        - button "Close" [ref=e178] [cursor=pointer]:
+          - generic [ref=e179]: Close
+          - text: ×
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]: Title
+          - textbox "Title" [active] [ref=e183]
+        - generic [ref=e184]:
+          - generic [ref=e185]: Severity
+          - combobox "Severity" [ref=e186]:
+            - option "HIGH"
+            - option "MID" [selected]
+            - option "LOW"
+        - generic [ref=e187]:
+          - generic [ref=e188]: Owner
+          - textbox "Owner" [ref=e189]: buggy
+        - generic [ref=e190]:
+          - generic [ref=e191]: Description
+          - textbox "Description" [ref=e192]
+        - generic [ref=e193]:
+          - button "Cancel" [ref=e194] [cursor=pointer]
+          - button "Save" [ref=e195] [cursor=pointer]
