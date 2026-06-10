@@ -1,0 +1,66 @@
+- generic [ref=e17]:
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - img "BuggyBoard" [ref=e21]
+      - heading "BuggyBoard" [level=1] [ref=e22]
+    - generic [ref=e23]:
+      - search "Search bugs by title" [ref=e25]
+      - button "New Bug" [ref=e27] [cursor=pointer]
+      - button "Logout" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - group "Filter by bug state" [ref=e33]:
+        - button "Open" [ref=e34] [cursor=pointer]
+        - button "Closed" [ref=e35] [cursor=pointer]
+      - table "Bugs" [ref=e38]:
+        - rowgroup [ref=e39]:
+          - row "ID Severity Title Owner" [ref=e40]:
+            - columnheader "ID" [ref=e41]:
+              - button "ID" [ref=e42] [cursor=pointer]: ID
+            - columnheader "Severity" [ref=e44]:
+              - button "Severity" [ref=e45] [cursor=pointer]:
+                - text: Severity
+                - generic [ref=e46]: ↓
+            - columnheader "Title" [ref=e47]:
+              - button "Title" [ref=e48] [cursor=pointer]: Title
+            - columnheader "Owner" [ref=e50]:
+              - button "Owner" [ref=e51] [cursor=pointer]: Owner
+        - rowgroup [ref=e53]:
+          - button "1 HIGH Engine is on fire buggy" [ref=e54] [cursor=pointer]:
+            - cell "1" [ref=e55]
+            - cell "HIGH" [ref=e56]:
+              - generic [ref=e57]: HIGH
+            - cell "Engine is on fire" [ref=e58]
+            - cell "buggy" [ref=e59]
+          - button "2 HIGH Login fails with special characters buggy" [ref=e107] [cursor=pointer]:
+            - cell "2" [ref=e108]
+            - cell "HIGH" [ref=e109]:
+              - generic [ref=e110]: HIGH
+            - cell "Login fails with special characters" [ref=e111]
+            - cell "buggy" [ref=e112]
+  - dialog "Create bug" [ref=e113]:
+    - generic [ref=e114]:
+      - generic [ref=e115]:
+        - heading "Create bug" [level=2] [ref=e116]
+        - button "Close" [ref=e117] [cursor=pointer]:
+          - generic [ref=e118]: Close
+          - text: ×
+      - generic [ref=e119]:
+        - generic [ref=e120]:
+          - generic [ref=e121]: Title
+          - textbox "Title" [active] [ref=e122]
+        - generic [ref=e123]:
+          - generic [ref=e124]: Severity
+          - combobox "Severity" [ref=e125]:
+            - option "HIGH"
+            - option "MID" [selected]
+            - option "LOW"
+        - generic [ref=e126]:
+          - generic [ref=e127]: Owner
+          - textbox "Owner" [ref=e128]: buggy
+        - generic [ref=e129]:
+          - generic [ref=e130]: Description
+          - textbox "Description" [ref=e131]
+        - generic [ref=e132]:
+          - button "Cancel" [ref=e133] [cursor=pointer]
+          - button "Save" [ref=e134] [cursor=pointer]
