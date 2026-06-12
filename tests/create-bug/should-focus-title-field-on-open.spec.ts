@@ -1,0 +1,16 @@
+// spec: specs/testing/06-create-bug.plan.md
+// seed: tests/seed.spec.ts
+import { test, expect } from '../fixtures';
+
+test.describe('Modal defaults', () => {
+  test('should-focus-title-field-on-open', async ({
+    authenticatedBoard,
+    boardPage,
+    createBugModal,
+  }) => {
+    // 1. Click the New Bug button in the board title bar
+    await boardPage.openCreateBugModal();
+
+    await expect(createBugModal.titleInput).toBeFocused();
+  });
+});

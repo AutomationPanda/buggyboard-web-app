@@ -1,0 +1,72 @@
+- generic [ref=e17]:
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - img "BuggyBoard" [ref=e21]
+      - heading "BuggyBoard" [level=1] [ref=e22]
+    - generic [ref=e23]:
+      - search "Search bugs by title" [ref=e25]
+      - button "New Bug" [ref=e27] [cursor=pointer]
+      - button "Logout" [ref=e29] [cursor=pointer]
+  - main [ref=e30]:
+    - generic [ref=e31]:
+      - group "Filter by bug state" [ref=e33]:
+        - button "Open" [ref=e34] [cursor=pointer]
+        - button "Closed" [ref=e35] [cursor=pointer]
+      - table "Bugs" [ref=e38]:
+        - rowgroup [ref=e39]:
+          - row "ID Severity Title Owner" [ref=e40]:
+            - columnheader "ID" [ref=e41]:
+              - button "ID" [ref=e42] [cursor=pointer]: ID
+            - columnheader "Severity" [ref=e44]:
+              - button "Severity" [ref=e45] [cursor=pointer]:
+                - text: Severity
+                - generic [ref=e46]: ↓
+            - columnheader "Title" [ref=e47]:
+              - button "Title" [ref=e48] [cursor=pointer]: Title
+            - columnheader "Owner" [ref=e50]:
+              - button "Owner" [ref=e51] [cursor=pointer]: Owner
+        - rowgroup [ref=e53]:
+          - button "1 HIGH Engine is on fire buggy" [ref=e56] [cursor=pointer]:
+            - cell "1" [ref=e57]
+            - cell "HIGH" [ref=e58]:
+              - generic [ref=e59]: HIGH
+            - cell "Engine is on fire" [ref=e60]
+            - cell "buggy" [ref=e61]
+          - button "2 HIGH Login fails with special characters buggy" [ref=e62] [cursor=pointer]:
+            - cell "2" [ref=e63]
+            - cell "HIGH" [ref=e64]:
+              - generic [ref=e65]: HIGH
+            - cell "Login fails with special characters" [ref=e66]
+            - cell "buggy" [ref=e67]
+          - button "4 MID The tank is leaking gas buggy" [ref=e68] [cursor=pointer]:
+            - cell "4" [ref=e69]
+            - cell "MID" [ref=e70]:
+              - generic [ref=e71]: MID
+            - cell "The tank is leaking gas" [ref=e72]
+            - cell "buggy" [ref=e73]
+  - dialog "Create bug" [ref=e74]:
+    - generic [ref=e75]:
+      - generic [ref=e76]:
+        - heading "Create bug" [level=2] [ref=e77]
+        - button "Close" [ref=e78] [cursor=pointer]:
+          - generic [ref=e79]: Close
+          - text: ×
+      - generic [ref=e80]:
+        - generic [ref=e81]:
+          - generic [ref=e82]: Title
+          - textbox "Title" [active] [ref=e83]
+        - generic [ref=e84]:
+          - generic [ref=e85]: Severity
+          - combobox "Severity" [ref=e86]:
+            - option "HIGH"
+            - option "MID" [selected]
+            - option "LOW"
+        - generic [ref=e87]:
+          - generic [ref=e88]: Owner
+          - textbox "Owner" [ref=e89]: buggy
+        - generic [ref=e90]:
+          - generic [ref=e91]: Description
+          - textbox "Description" [ref=e92]
+        - generic [ref=e93]:
+          - button "Cancel" [ref=e94] [cursor=pointer]
+          - button "Save" [ref=e95] [cursor=pointer]
