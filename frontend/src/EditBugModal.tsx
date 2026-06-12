@@ -205,13 +205,13 @@ export function EditBugModal({ bug, onClose, onSaved }: EditBugModalProps) {
   return (
     <>
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/50"
+      className="bug-modal-overlay"
       role="dialog"
       aria-modal="true"
       aria-labelledby="edit-bug-modal-title"
     >
-      <div className="bg-white rounded-lg shadow-lg w-full max-w-lg border border-stone-200">
-        <div className="flex items-center justify-between gap-2 px-6 py-4 border-b border-stone-200">
+      <div className="bug-modal-panel">
+        <div className="bug-modal-header">
           <h2 id="edit-bug-modal-title" className="text-lg font-semibold text-stone-800">
             Edit bug #{bug.id}
           </h2>
@@ -225,7 +225,7 @@ export function EditBugModal({ bug, onClose, onSaved }: EditBugModalProps) {
             <span aria-hidden="true">×</span>
           </button>
         </div>
-        <form onSubmit={handleSubmit} className="px-6 py-4 space-y-4">
+        <form onSubmit={handleSubmit} className="bug-modal-body space-y-4">
           <div>
             <label htmlFor="edit-bug-id" className="block text-sm font-medium text-stone-700 mb-1">
               ID

@@ -45,3 +45,17 @@
   color: var(--color-severity-low);
   background-color: color-mix(in srgb, var(--color-severity-low) 22%, transparent);
 }
+
+/* Bug modals: scrollable body when content exceeds viewport (specs/design/theme.md) */
+.bug-modal-overlay {
+  @apply fixed inset-0 z-50 flex items-center justify-center p-4 bg-stone-900/50;
+}
+.bug-modal-panel {
+  @apply bg-white rounded-lg shadow-lg w-full max-w-lg border border-stone-200 max-h-[calc(100vh-2rem)] flex flex-col overflow-hidden;
+}
+.bug-modal-header {
+  @apply flex items-center justify-between gap-2 px-6 py-4 border-b border-stone-200 shrink-0;
+}
+.bug-modal-body {
+  @apply overflow-y-auto flex-1 min-h-0 px-6 py-4;
+}
